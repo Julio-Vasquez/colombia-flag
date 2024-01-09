@@ -1,0 +1,51 @@
+body {
+  align-items: center;
+  background: #6e28d9;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+  padding: 0 24px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 210px;
+  background-color: blue;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  rotate: 90deg;
+}
+
+.container::before {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 90px;
+  background-color: yellow;
+  position: absolute;
+  height: 100%;
+}
+
+.container::after {
+  content: '';
+  top: 0;
+  right: 0;
+  width: 60px;
+  background-color: red;
+  position: absolute;
+  height: 100%;
+}
+
+.container img {
+  height: 80px;
+  position: absolute;
+  rotate: -90deg;
+  user-select: none;
+}
+
